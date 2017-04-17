@@ -1,0 +1,22 @@
+{
+  "name": "typescript-react-webpack",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1",
+    "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
