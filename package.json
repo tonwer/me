@@ -17,6 +17,8 @@
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-images": "^0.5.2",
+    "react-native": "^0.43.4"
   }
 }
