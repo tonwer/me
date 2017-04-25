@@ -1,3 +1,31 @@
+.header {
+  padding: 2em 3em 3em 3em;
+  background: #f1f1f1;
+}
 .header-wrapper {
-  color: pink;
+  width: 100%;
+  color: white;
+  background: #282F49;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.flex-item {
+  padding: 0em 0.75em 0em 0.75em;
+  border-right: 1px solid white;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  color: #282F49;
+  background: #fff;
+  font-size: 1.15em;
+  margin: 0;
+}
+div {
+  display: block;
 }
