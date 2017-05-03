@@ -18,7 +18,7 @@ class Header extends React.Component<null, {}> {
                   <div className="horisontal">
                   <ul className="flex-container">
                     <li className="flex-item">999 99 999</li>
-                    <li className="flex-item">name@gmail.com</li>
+                    <li className="flex-item">name-at-gmail.com</li>
                   </ul>
                   </div>
                 </ul>

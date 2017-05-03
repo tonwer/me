@@ -19,14 +19,64 @@
 .floatRight {
     float: right;
     width: 35%;
+    
+}
+.formRow {
+    padding-top: 1em;
+    padding-right: 0.01em;
+    &.right {
+        float: right;
+        width: 75%;
+    }
+    &.left {
+        float: left;
+        width: 20%;
+        p {
+            margin-top: 1em;
+            margin-bottom: 1.5em;
+        }
+    }
 }
 
-.skills img {
-    height: 13em;
-    padding: 2em 0 0 3em;
+
+.skills{ 
+    overflow: hidden; 
+    .pie {
+        font-size: 0.5em;
+    }
 }
 
 .software img {
     height: 17em;
     padding: 2em 0 0 3em;
+}
+
+.barChart {
+    font-size: 0.7em;
+    .bar {
+        background-color: @blue;
+        height: 2em;
+        margin-top: 0.7em;
+
+        &#sf1 {
+            width: 17em;
+        } &#sf2 {
+            width: 12em;
+        }&#sf3 {
+            width: 15em;
+        }&#sf4 {
+            width: 9em;
+        }&#sf5 {
+            width: 15em;
+        }&#sf6 {
+            width: 17em;
+        }&#sf7 {
+            width: 19em;
+        }&#sf8 {
+            width: 12em;
+        }&#sf9 {
+            width: 14em;
+        }
+    }
+    
 }

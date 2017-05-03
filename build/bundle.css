@@ -45,13 +45,66 @@
   float: right;
   width: 35%;
 }
-.skills img {
-  height: 13em;
-  padding: 2em 0 0 3em;
+.formRow {
+  padding-top: 1em;
+  padding-right: 0.01em;
+}
+.formRow.right {
+  float: right;
+  width: 75%;
+}
+.formRow.left {
+  float: left;
+  width: 20%;
+}
+.formRow.left p {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+.skills {
+  overflow: hidden;
+}
+.skills .pie {
+  font-size: 0.5em;
 }
 .software img {
   height: 17em;
   padding: 2em 0 0 3em;
+}
+.barChart {
+  font-size: 0.7em;
+}
+.barChart .bar {
+  background-color: #282F49;
+  height: 2em;
+  margin-top: 0.7em;
+}
+.barChart .bar#sf1 {
+  width: 17em;
+}
+.barChart .bar#sf2 {
+  width: 12em;
+}
+.barChart .bar#sf3 {
+  width: 15em;
+}
+.barChart .bar#sf4 {
+  width: 9em;
+}
+.barChart .bar#sf5 {
+  width: 15em;
+}
+.barChart .bar#sf6 {
+  width: 17em;
+}
+.barChart .bar#sf7 {
+  width: 19em;
+}
+.barChart .bar#sf8 {
+  width: 12em;
+}
+.barChart .bar#sf9 {
+  width: 14em;
 }
 body {
   font-family: 'Lato', sans-serif;

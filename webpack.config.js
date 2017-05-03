@@ -24,7 +24,10 @@ const config = {
       {
         test: /\.tsx?$/,
         loader: "ts-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015']
+        }
       },
       {
             test: /\.less$/,

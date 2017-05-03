@@ -1,7 +1,18 @@
 import * as React from "react";
+import * as ReactD3 from "react-d3-components";
+import * as D3 from "d3";
 import "./Body.less";
 
-const hei = "Hello sev"
+var PieCharts = ReactD3.PieChart;
+
+var data = {
+        label: 'somethingA',
+        values: [{x: 'SomethingA', y: 1}, {x: 'SomethingB', y: 2}, {x: 'SomethingC', y: 3}]
+};
+var colorScale = D3.scale.ordinal().domain(['SomethingA', 'SomethingB', 'SomethingC']).range(['#282F49', '#4D386C', '#018670']);
+
+var sort = null;
+
 
 class Body extends React.Component<null, {}> {
   render() {
@@ -15,7 +26,6 @@ class Body extends React.Component<null, {}> {
                 <Experience/>
                 <Education/>
               </div>
-
             </div>;
   }
 }
@@ -52,7 +62,23 @@ class Skills extends React.Component<null, {}> {
   render() {
     return <div className="skills">   
              <BodyHeader text="Skills"/>
-             <img src='http://icon-icons.com/icons2/632/PNG/512/pie-chart-1_icon-icons.com_58005.png' />
+             {/*<img src='http://icon-icons.com/icons2/632/PNG/512/pie-chart-1_icon-icons.com_58005.png' />*/}
+             <PieChart />
+            </div>;
+  }
+}
+
+class PieChart extends React.Component<null, {}> {
+  render() {
+    return <div className="pie">
+              <PieCharts
+                data={data}
+                width={450}
+                height={300}
+                margin={{top: 10, bottom: 10, left: 1, right: 1}}
+                sort={sort}
+                colorScale={colorScale}
+                />
             </div>;
   }
 }
@@ -61,7 +87,37 @@ class Software extends React.Component<null, {}> {
   render() {
     return <div className="software">
               <BodyHeader text="Software"/>
-              <img src='https://www.upeace.org/uploads/image/3A%20Upeace-Pie-Chart-Feb-2016-No-Background.png' />
+              {/*<img src='https://www.upeace.org/uploads/image/3A%20Upeace-Pie-Chart-Feb-2016-No-Background.png' />*/}
+              <MyBarChart />
+            </div>;
+  }
+}
+
+class MyBarChart extends React.Component<null, {}> {
+  render() {
+    return <div className="barChart">
+              <div className="formRow left">
+                <p>Angular</p>
+                <p>ASP.NET</p>
+                <p>sf3</p>
+                <p>sf4</p>
+                <p>sf5</p>
+                <p>sf6</p>
+                <p>sf7</p>
+                <p>sf8</p>
+                <p>sf9</p>
+              </div>
+              <div className="formRow right">
+                <div className="bar" id="sf1"></div>
+                <div className="bar" id="sf2"></div>
+                <div className="bar" id="sf3"></div>
+                <div className="bar" id="sf4"></div>
+                <div className="bar" id="sf5"></div>
+                <div className="bar" id="sf6"></div>
+                <div className="bar" id="sf7"></div>
+                <div className="bar" id="sf8"></div>
+                <div className="bar" id="sf9"></div>
+              </div>
             </div>;
   }
 }
