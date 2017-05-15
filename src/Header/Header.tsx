@@ -7,8 +7,8 @@ class Header extends React.Component<null, {}> {
     return <div className="header">
               <div className="header-wrapper">          
                 <ul className="flex-container">
-                  <li className="flex-item">Firstname Lastname</li>
-                  <li className="flex-item">Fullstack Webdeveloper</li>
+                  <li className="flex-item">Tone Wermundsen</li>
+                  <li className="flex-item">Fullstack Web Developer</li>
                   <div className="horisontal">
                     <ul className="flex-container">
                       <li className="flex-item">Phone</li>
@@ -17,8 +17,8 @@ class Header extends React.Component<null, {}> {
                   </div>
                   <div className="horisontal">
                   <ul className="flex-container">
-                    <li className="flex-item">999 99 999</li>
-                    <li className="flex-item">name-at-gmail.com</li>
+                    <li className="flex-item">984 71 094</li>
+                    <li className="flex-item">tonewermundsen-at-gmail.com</li>
                   </ul>
                   </div>
                 </ul>

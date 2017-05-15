@@ -1,24 +1,23 @@
 import * as React from "react";
+import "./Footer.less";
 
-const hei = "Hello sev"
 
 class Footer extends React.Component<null, {}> {
   render() {
-    return <AboutMeMain/>;
+    return <ContactForMore/>;
   }
 }
 
-class AboutMeMain extends React.Component<null, {}> {
+class ContactForMore extends React.Component<null, {}> {
   render() {
-    return <MyPicture/>;
+    return <div className="footer">
+              <div className="footer-wrapper">   
+                <a href="https://no.linkedin.com/in/tone-wermundsen-7a0a9a5b"><i className="fa fa-linkedin-square fa-6"></i></a>
+              </div>
+            </div>;
   }
 }
 
-class MyPicture extends React.Component<null, {}> {
-  render() {
-    return <div className="circle-div"/>;
-  }
-}
 
 
 

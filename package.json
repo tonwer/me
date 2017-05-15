@@ -4,22 +4,20 @@
     "build": "webpack",
     "watch": "webpack --watch"
   },
-  "devDependencies": {
-    "ts-loader": "^2.0.3",
-    "typescript": "^2.2.2",
-    "webpack": "^2.4.1"
-  },
   "dependencies": {
+    "@types/react": "^15.0.24",
     "chart.js": "^2.5.0",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "less": "^2.7.2",
     "less-loader": "^4.0.3",
-    "prop-types": "^15.5.8",
     "react": "^15.5.4",
-    "react-d3-components.js": "^0.6.6",
+    "react-d3-components": "^0.6.6",
     "react-dom": "^15.5.4",
     "react-images": "^0.5.2",
-    "react-native": "^0.43.4"
+    "react-native": "^0.43.4",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1"
   }
 }

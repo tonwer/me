@@ -1,11 +1,10 @@
 .header {
   padding: 2em 3em 3em 3em;
-  background: #f1f1f1;
-  border-bottom: 1px solid #282F49;
+  background: #018670;
 }
 .header-wrapper {
   width: 100%;
-  color: #282F49;
+  color: white;
   opacity: 0.8;
   display: flex;
   justify-content: center;
@@ -25,25 +24,60 @@
 }
 .flex-item {
   padding: 0em 0.75em 0em 0.75em;
-  border-right: 1px solid #282F49;
+  border-right: 1px solid white;
   font-size: xx-large;
 }
 .bodyMe {
   padding: 2.5em 5em 2.5em 5em;
   color: #282F49;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+.tableHead {
+  width: 25%;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.title.titlepurple {
+  color: #018670;
+}
+.title.titleblue {
+  color: #282F49;
+}
+.undertitle {
+  color: #4682b4;
+  font-size: 0.7em;
+}
+.doubleContent {
+  display: flex;
+}
+.doubleContent.spacebetween {
+  justify-content: space-between;
+}
+.doubleContent div {
+  margin-right: 2em;
+}
+.doubleContent .column {
+  width: 50%;
+}
+@media (max-width: 60rem) {
+  .doubleContent .column {
+    width: 100%;
+  }
+}
+@media (max-width: 60rem) {
+  .doubleContent {
+    display: block;
+  }
 }
 .bodyHeader {
   font-size: x-large;
   padding: 2.5em 0em 0em 0em;
-  border-bottom: 1px dotted #282F49;
-}
-.floatLeft {
-  float: left;
-  width: 55%;
-}
-.floatRight {
-  float: right;
-  width: 35%;
+  border-bottom: 1px solid #282F49;
+  margin-bottom: 1em;
 }
 .formRow {
   padding-top: 1em;
@@ -52,10 +86,12 @@
 .formRow.right {
   float: right;
   width: 75%;
+  margin-right: 0;
 }
 .formRow.left {
   float: left;
   width: 20%;
+  margin-right: 0;
 }
 .formRow.left p {
   margin-top: 1em;
@@ -66,10 +102,6 @@
 }
 .skills .pie {
   font-size: 0.5em;
-}
-.software img {
-  height: 17em;
-  padding: 2em 0 0 3em;
 }
 .barChart {
   font-size: 0.7em;
@@ -105,6 +137,37 @@
 }
 .barChart .bar#sf9 {
   width: 14em;
+}
+.barChart .bar#sf10 {
+  width: 17em;
+}
+.image {
+  width: 11em;
+}
+.nomark_list {
+  list-style: none;
+  font-size: 0.8em;
+}
+.nomark_list li {
+  margin-bottom: 0.2em;
+}
+span {
+  display: block;
+}
+.footer {
+  font-size: 0.8em;
+  padding: 2em 3em 3em 3em;
+  background: #018670;
+}
+.footer-wrapper {
+  width: 100%;
+  color: white;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+}
+.footer-wrapper a {
+  color: white;
 }
 body {
   font-family: 'Lato', sans-serif;
